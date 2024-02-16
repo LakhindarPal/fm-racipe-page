@@ -1,0 +1,134 @@
+:root {
+  --clr-nutmeg: hsl(14, 45%, 36%);
+  --clr-dark-raspberry: hsl(332, 51%, 32%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-rose-white: hsl(330, 100%, 98%);
+  --clr-eggshell: hsl(30, 54%, 90%);
+  --clr-light-grey: hsl(30, 18%, 87%);
+  --clr-wenge-brown: hsl(30, 10%, 34%);
+  --clr-dark-charcoal: hsl(24, 5%, 18%);
+  --clr-light-blue: hsla(228, 45%, 44%, 1);
+  --dimension: 15px;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Outfit;
+  font-weight: 400;
+  background-color: var(--clr-eggshell);
+  color: var(--clr-wenge-brown);
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: min(100%, 678px);
+  background-color: var(--clr-white);
+}
+
+#content {
+  padding: calc(var(--dimension) * 2);
+}
+
+main,
+#preparation {
+  border-radius: var(--dimension);
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--clr-dark-charcoal);
+}
+
+#preparation {
+  background-color: var(--clr-rose-white);
+  padding: var(--dimension);
+}
+
+#preparation li::marker,
+#preparation h3 {
+  color: var(--clr-dark-raspberry);
+}
+
+ol,
+ul {
+  padding-left: var(--dimension);
+}
+
+li::marker,
+h2,
+td:nth-child(even) {
+  color: var(--clr-nutmeg);
+}
+
+li::marker {
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: var(--dimension);
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--clr-wenge-brown);
+}
+
+strong,
+td:nth-child(even) {
+  font-weight: 700;
+}
+
+footer {
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--clr-light-blue);
+}
+
+@media screen and (min-width: 376px) {
+  main {
+    padding: calc(var(--dimension) * 2);
+  }
+
+  img {
+    border-radius: var(--dimension);
+  }
+}
