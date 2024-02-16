@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [https://github.com/LakhindarPal/fm-racipe-page](https://github.com/LakhindarPal/fm-racipe-page)
-- Live Site URL: [https://fm-racipe-page.netlify.app](https://fm-racipe-page.netlify.app)
+- Live Site URL: [https://fm-racipe-page.netlify.app](https://racipe-page.netlify.app)
 
 ## My process
 
